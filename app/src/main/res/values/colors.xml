@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorRed">#f00</color>
+    <color name="menu_titledcolor">#FFFFFF</color>
+    <color name="menu_DividerColor">#11000000</color>
+    <color name="menu_DialogColor">#e75b0a</color>
+    <color name="white_translucent_20">#20FFFFFF</color>
+    <!--主题切换使用color for powersen-->
+    <color name="white">#FFFFFF</color>
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="accent">#009688</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="common_color">@color/primary</color>
+    <!--  <color name="battery">#33ff00</color> -->
+    <color name="defalut">#080099cc</color>
+    <!--分享专用-->
+    <color name="umeng_white">#ffffff</color>
+    <color name="umeng_blue">#0086DC</color>
+    <color name="umeng_black">#000000</color>
+    <color name="umeng_background">#D4E0E5</color>
+    <color name="umeng_text_color">#575A5C</color>
+    <color name="umeng_divide">#C3C6C9</color>
+    <color name="vk_color">#5585BC</color>
+    <color name="vk_grey_color">#F0F2F5</color>
+    <color name="vk_white">#fff</color>
+    <color name="vk_light_color">#A7C2DF</color>
+    <color name="vk_clear">#0000</color>
+    <color name="vk_black_pressed">#1000</color>
+    <color name="vk_black">#000</color>
+    <color name="vk_share_blue_color">#338cc9</color>
+    <color name="vk_share_gray_line">#e5e5e5</color>
+    <color name="vk_share_top_blue_color">#527dad</color>
+    <color name="vk_share_link_title_color">#5477a3</color>
+    <color name="vk_share_link_color">#9e9e9e</color>
+
+    <!--我的页面条目的底边框-->
+    <color name="mine_item_bottom_color">#90999f</color>
+    <!--专题页，向左滑动关闭Activity，背景改为透明-->
+    <color name="transparent">#03000000</color>
+</resources>

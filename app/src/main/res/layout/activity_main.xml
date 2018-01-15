@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.quickvideo.quickvideo.mainui.ResideLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/reside_layout"
+    android:background="?attr/menuBackground"
+    tools:context="com.quickvideo.quickvideo.MainActivity">
+
+    <!--菜单列表，菜单背景-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--头像-->
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <!--圆角图片-->
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/user_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/photo"
+                    app:actualImageScaleType="centerCrop"
+                    app:roundAsCircle="true"
+                    />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="?attr/mainColor"
+                    android:text="一切皆有可能....."
+                    />
+
+
+                <ListView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:divider="@null"
+                    android:listSelector="@android:color/transparent"
+                    android:id="@+id/menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+            <!--关于-->
+            <LinearLayout
+                android:id="@+id/bottom_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:padding="12dp"
+                    android:text="关于"
+                    android:drawableLeft="@mipmap/guanyu"
+                    android:textColor="?attr/mainColor"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:padding="12dp"
+                    android:drawableLeft="@mipmap/zhuti"
+                    android:text="主题"
+                    android:textColor="?attr/mainColor"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+
+
+    <!--主界面-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/menuBackground">
+        <!--viewpager背景图-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.quickvideo.quickvideo.utils.NonSwipeableViewPager
+                android:id="@+id/myviewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="49dp"/>
+            <com.yinglan.alphatabs.AlphaTabsIndicator
+                android:background="@mipmap/bottom_bg"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/alphaIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+                <com.yinglan.alphatabs.AlphaTabView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    app:tabIconNormal="@mipmap/found"
+                    app:tabIconSelected="@mipmap/found_select"
+                    app:tabText="精选"
+                    app:tabTextSize="12sp"
+                    app:textColorNormal="#84868C"
+                    app:textColorSelected="#f00"
+                    />
+
+                <com.yinglan.alphatabs.AlphaTabView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    app:tabIconNormal="@mipmap/special"
+                    app:tabIconSelected="@mipmap/special_select"
+                    app:tabText="专题"
+                    app:tabTextSize="12sp"
+                    app:textColorNormal="#84868C"
+                    app:textColorSelected="#f00"
+                    />
+                <com.yinglan.alphatabs.AlphaTabView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    app:tabIconNormal="@mipmap/fancy"
+                    app:tabIconSelected="@mipmap/fancy_select"
+                    app:tabText="发现"
+                    app:tabTextSize="12sp"
+                    app:textColorNormal="#84868C"
+                    app:textColorSelected="#f00"
+                    />
+                <com.yinglan.alphatabs.AlphaTabView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    app:tabIconNormal="@mipmap/my"
+                    app:tabIconSelected="@mipmap/my_select"
+                    app:tabText="我的"
+                    app:textColorNormal="#84868C"
+                    app:textColorSelected="#f00"
+                    app:tabTextSize="12sp"
+                    />
+            </com.yinglan.alphatabs.AlphaTabsIndicator>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.quickvideo.quickvideo.mainui.ResideLayout>

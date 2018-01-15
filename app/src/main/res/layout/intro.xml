@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:text="洒水大奥多所多撒多阿萨德"
+        android:id="@+id/intro_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="洒水大奥多所多撒多阿萨德"
+        android:id="@+id/intro_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="false" />
+
+    <!-- 更多和箭头 -->
+    <RelativeLayout
+        android:id="@+id/show_more"
+        android:layout_below="@id/text_content"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        >
+        <TextView
+            android:id="@+id/spread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展开"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/shrink_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:text="收起"
+            />
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/intro_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
